@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Hihumin2"
+             x:Class="Hihumin2.MainPage">
+    <ContentPage.BindingContext>
+        
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid
+            Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Column="0"
+                Text="{Binding Score}" />
+            <Button
+                Grid.Column="1"
+                Text="{Binding Virtue}" />
+            <Button
+                Grid.Column="2"
+                Text="{Binding TimeLimit}" />
+        </Grid>
+        <Grid
+            Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button
+                FontSize="Medium"
+                Grid.Column="0"
+                Text="{Binding NextFreight}" />
+            <Button
+                FontSize="Large"
+                Grid.Column="1"
+                Text="{Binding NowFreight}"
+                Clicked="Go_Button_Clicked" />
+            <Button
+                Grid.Column="2"
+                Text="{Binding ChainCount}" />
+        </Grid>
+        <Grid
+            Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                CommandParameter="0"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[0]}"
+                Image="icon.png">
+            </Button>
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                CommandParameter="1"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[1]}"/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                CommandParameter="2"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[2]}"/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="3"
+                CommandParameter="3"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[3]}"/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="4"
+                CommandParameter="4"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[4]}"/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                CommandParameter="5"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[5]}"/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                CommandParameter="6"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[6]}"/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                CommandParameter="7"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[7]}"/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                CommandParameter="8"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[8]}"/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="4"
+                CommandParameter="9"
+                Clicked="Throwed_Hihumin_Clicked"
+                Text="{Binding ThrowedHihumins[9]}"/>
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                CommandParameter="0"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[0]}"/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                CommandParameter="1"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[1]}" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                CommandParameter="2"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[2]}" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="3"
+                CommandParameter="3"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[3]}" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="4"
+                CommandParameter="4"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[4]}" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                CommandParameter="5"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[5]}" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                CommandParameter="6"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[6]}" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                CommandParameter="7"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[7]}" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="3"
+                CommandParameter="8"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[8]}" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="4"
+                CommandParameter="9"
+                Clicked="My_Hihumin_Clicked"
+                Text="{Binding MyHihumins[9]}" />
+        </Grid>
+    </Grid>
+</ContentPage>

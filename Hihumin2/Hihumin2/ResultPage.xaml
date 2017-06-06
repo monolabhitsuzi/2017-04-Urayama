@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hihumin2.ResultPage">
+    <StackLayout>
+        <Label
+        Text="GAME OVER"
+        FontSize="Large"/>
+        <Label
+        Text="SCORE:"
+        FontSize="Medium"/>
+        <Label
+        x:Name="score"
+        Text="999999"
+        FontSize="Large"/>
+        <Image Source="Hihumin2.Image.win.jpg"/>
+    </StackLayout>
+</ContentPage>
